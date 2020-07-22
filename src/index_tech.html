@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Technology Questions</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+     <nav>
+        <h1 class="header">Welcome to the Quiz Application</h1>
+     </nav>
+       <p>The Selected Category is : <b><span id="result"></span></b></p>
+        <script>
+        document.getElementById('result').innerHTML = localStorage.getItem('dropdownValue');
+        </script>
+  </body>
+ </html>

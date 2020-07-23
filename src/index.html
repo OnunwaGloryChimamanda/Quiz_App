@@ -1,1 +1,48 @@
 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>QUIZ APPLICATION</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="main-header">
+                QUIZ APPLICATION
+            </h1>
+            <div class="container">
+                
+                <!-- class used for styling id grabbed for JS -->
+            <form action = "index_tech.html" id="form" class="form" >
+               <h2>Register with Us</h2>
+               <div class="form-control">
+                   <label for="firstname"> Firstname</label>
+                  <input type="text" id="firstname" placeholder="Enter firstname">
+                 <br> <small>Error</small>
+                </div>
+                <div class="form-control">
+                    <label for="Lastname "> Lastname</label>
+                   <input type="text" id="lastname" placeholder="Enter lastname">
+                  <br> <small>error</small>
+                 </div>
+                 <div class="form-control">
+                    <label for="category"> Select Category</label>
+                     <select name="dropdown" id ='dropdown' class="dropdown ">
+                         <option selected disabled  hidden> --Select--</option>
+                         <option value="technology" >Technology</option>
+                        <option value="Mathematics">Mathematics</option>
+                     </select>
+                   <small>error</small>
+                 </div>
+                 <input type="submit" value="Submit" id="submit-btn"  class="submit-btn">
+               </form> 
+            </div>
+        </main>
+     <script src ="main.js"></script>
+
+    </body>
+</html>

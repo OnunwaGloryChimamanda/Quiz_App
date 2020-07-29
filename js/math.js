@@ -15,6 +15,7 @@ submitButton.addEventListener('click', () => {
 //function that runs when start is clicked
 function startGame() {
    startButton.classList.add('hide')
+//    startButton.innerHTML =" Next";
    questionContainerElement.classList.remove('hide')
    shuffledQuestions = questions.sort(()=> Math.random() - .5)
    currentQuestionIndex = 0

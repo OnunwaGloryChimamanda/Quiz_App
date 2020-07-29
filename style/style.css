@@ -28,6 +28,9 @@ body{
     position: relative;
     
 }
+h2{
+    color: #2ecc71;
+}
 @keyframes title{
     0%{
         top: -100px;

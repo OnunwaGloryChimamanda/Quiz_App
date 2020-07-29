@@ -53,7 +53,7 @@ function passedValue()
 
     console.log(selectedVal);
     localStorage.setItem('dropdownValue', selectedVal);
-    if (selectedVal === 'technology') window.location = './index_tech.html';
+    if (selectedVal === 'technology') window.location = './tech.html';
     if (selectedVal === 'mathematics') window.location = './math.html';
     return true;
     

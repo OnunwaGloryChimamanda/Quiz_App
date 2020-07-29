@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #3a8;
+    --secondary-color: #7efa2c;
+}
+
+body{
+    
+    background-color:rgb(245, 250, 255) ;
+    
+}
+
+.content{
+   font-size: 1.4em;
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+
+}
+.intro{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em;
+    
+}
+.header{
+    text-align: center;
+    font-size: 2.3em;
+    color: var( --primary-color);
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+input[type=radio]{
+background-color: aliceblue;
+}
+ .main-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    align-items: center;
+    /* height: 100vh; */
+    
+ }   
+.container{ 
+  width: 700px;
+  max-width: 80%;
+  padding-left: 20px;
+  font-size: 0.8em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0 , 0, 0, 0.4);
+  /* text-align: center; */
+}
+
+.question{
+   font-weight: 600;
+    font-size: 1.45em;
+}
+.answers {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.25em;
+     width: 80%;
+     
+     padding: 10px 14px;
+     border-radius: 10px;
+     margin: 10px auto;
+     animation-name: buttons;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    position: relative;
+    background-color: rgb(77, 211, 235);
+    /* background-color: var(--secondary-color); */
+} 
+
+@keyframes buttons{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#submit{
+    width: 60%;
+    padding: 10px 20px;
+    background-color: var( --primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 130px;
+    animation-name: buttons;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+@keyframes buttons{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#submit:hover{
+    background-color:#000000;
+    color: var(--primary-color);
+}
+@media screen and (max-width:768px){
+    .header{
+        font-size: 2em;
+    }
+    #submit{
+        margin-left: 80px;
+    }
+}

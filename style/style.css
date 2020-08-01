@@ -9,14 +9,14 @@
 
 body{
     font-family: 'Open Sans Condensed', sans-serif;
-    background: #f9fafb;
+    background: rgb(243, 230, 230);
     display: flex;
     align-items: center;
     justify-content: center;
     background-image:url("../img/quiz.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     /* vertically centered  */
     min-height: 100vh; 
 }
@@ -26,10 +26,13 @@ body{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     position: relative;
+    font-weight: bold;
+    
     
 }
 h2{
     color: #2ecc71;
+  
 }
 @keyframes title{
     0%{
@@ -40,14 +43,20 @@ h2{
     }
 }
 .container{
-    background: #fff;
-    box-shadow:  0 2px 8px rgba(0,0,0,0.3);
+    background-color: #fff;
+    
+    /* background: rgb(209, 231, 219); */
+    box-shadow: -1000px 20px 30px 0 rgba(79, 230, 49, 0.1),
+                0 4px 4px 0 rgba(250, 3, 3, 0.15),
+                0 2px 2px 0 rgba(0, 0, 0, 0.6);
+    
     border-radius: 10px;
     width: 550px;
     animation-name: myform;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     position: relative;
+    z-index: 100;
 
 }
 h2{
@@ -115,8 +124,9 @@ h2{
 
 .submit-btn{
     margin-top: 40px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #000;
+    
+    color: #2ecc71;
     border: none;
     padding: 10px 30px;
     border-radius: 5px;
@@ -127,14 +137,20 @@ h2{
     cursor: pointer;
 }
 .submit-btn:hover{
-    color: #000;
+    
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: #000;
+    box-shadow: 10px 2px 10px rgba(194, 164, 164, 0.3);
+
 }
 
 @media (max-width: 768px){
     .form-control input, .dropdown, .submit-btn{
-        width: 80%;
+        width: 50
+
     }
     .container{
-        width: 400px;
+        width: 300px;
     }
 }
